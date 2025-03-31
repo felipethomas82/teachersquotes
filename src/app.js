@@ -65,6 +65,23 @@ app.get('/quotes/random', (req, res) => {
     });
 });
 
+// GET route to fetch random quotes
+app.get('/quotes/all', (req, res) => {
+    fs.readFile(quotesFilePath, 'utf8', (err, data) => {
+        if (err && err.code !== 'ENOENT') {
+            return res.status(500).json({ error: 'Failed to read quotes file.' });
+        }
+
+        const quotes = data ? JSON.parse(data) : [];
+        if (quotes.length === 0) {
+            return res.status(404).json({ error: 'No quotes available.' });
+        }
+
+        // Select 4 random quotes
+        res.json(quotes);
+    });
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
