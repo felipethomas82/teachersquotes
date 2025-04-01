@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "teacher": "Fabio",
+        "quote": "Ema ema ema, cada um com os seus problemas"
+    },
+    {
+        "teacher": "Jeferson",
+        "quote": "Aham"
+    },
+    {
+        "teacher": "Sergio Fujii",
+        "quote": "Ta comendo denovo?"
+    },
+    {
+        "teacher": "Omar",
+        "quote": "Hey, Presta atencao, vai cair na prova!"
+    },
+    {
+        "teacher": "Sidarta",
+        "quote": "E o Projeto de 20 paginas?"
+    },
+    {
+        "teacher": "Guilherme",
+        "quote": "Tranquilinho?"
+    }
+]
